@@ -33,23 +33,23 @@ const Summary = () => {
     const d = new Date(date);
     const day = d.getDate();
     const monthNames = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
+      "Styczeń",
+      "Luty",
+      "Marzec",
+      "Kwiecień",
+      "Maj",
+      "Czerwiec",
+      "Lipiec",
+      "Sierpień",
+      "Wrzesień",
+      "Październik",
+      "Listopad",
+      "Grudzień",
     ];
     const month = monthNames[d.getMonth()];
     const hours = d.getHours().toString().padStart(2, "0");
     const minutes = d.getMinutes().toString().padStart(2, "0");
-    return `${day} ${month} at ${hours}:${minutes}`;
+    return `${day} ${month} o ${hours}:${minutes}`;
   };
 
   return (
@@ -140,7 +140,7 @@ const Summary = () => {
         </li>
         <li>
           <hr className="bg-primary" />
-          <div className="timeline-start timeline-box">🎉</div>
+          <div className="timeline-start timeline-box">😩</div>
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"

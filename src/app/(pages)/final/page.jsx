@@ -42,7 +42,7 @@ const FinalPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-3xl">Dobra Robota! 🥳</h1>
+      <h1 className="text-3xl">No i git! 🥳</h1>
       <p className="text-lg mt-2">Kocham Cię Zuzia (ꈍ◡ꈍ)♥(❛ε❛⋆)</p>
       <Image
         src="/images/1.gif"

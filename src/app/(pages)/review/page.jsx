@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const ReviewPage = () => {
   const router = useRouter();
-  const [rating, setRating] = useState(5);
+  const [rating, setRating] = useState(7);
 
   const handleSubmit = async () => {
     router.push("/final");
@@ -51,7 +51,7 @@ const ReviewPage = () => {
         Oceń tą walentynke w skali od 1- 10? ( ͡^ ͜ʖ ͡^ )
       </h1>
       <p className="text-lg mt-2">
-        Ocena: {rating} {rating >= 10 ? "🦭" : "💢"}
+        Ocena: {rating} {rating >= 10 ? "(ᴗᵔᴥᵔ)" : "╰༼=ಠਊಠ=༽╯"}
       </p>
       <div className="w-80 my-6">
         <input
@@ -79,7 +79,7 @@ const ReviewPage = () => {
       </div>
 
       <button
-        className="btn btn-secondary"
+        className="btn btn-primary"
         onClick={handleSubmit}
         disabled={rating < 10}
       >

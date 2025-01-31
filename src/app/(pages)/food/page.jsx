@@ -83,7 +83,12 @@ const FoodPage = () => {
       <h1 className="text-3xl font-bold ">Wybierz szamke... 🍝</h1>
       <p className="text-lg mt-2 mb-6">, ale chyba znam odpowiedź ( ͡°ω ͡°)</p>
 
-      <Slider photos={photos} getter={food} setter={setFood} />
+      <div
+        className="tooltip tooltip-open tooltip-right"
+        data-tip="to se mozna scrollować 😁"
+      >
+        <Slider photos={photos} getter={food} setter={setFood} />
+      </div>
 
       <div className="flex gap-4 mt-6">
         <button

@@ -23,7 +23,7 @@ const Slider = ({ photos, getter, setter }) => {
 const Photo = ({ photo, isSelected, onSelect }) => {
   return (
     <div
-      className="carousel-item w-64 flex flex-col items-center justify-center"
+      className="carousel-item w-64 flex flex-col items-center justify-center bg-secondary"
       onClick={() => onSelect(photo.label)}
     >
       <div className="relative w-64 h-64 overflow-hidden">
@@ -36,7 +36,7 @@ const Photo = ({ photo, isSelected, onSelect }) => {
         />
       </div>
 
-      <div className="flex mt-2 text-center">
+      <div className="flex my-2 text-center">
         <input
           type="checkbox"
           id={photo.label}

@@ -20,7 +20,7 @@ const ShrekPage = () => {
         className="btn btn-secondary"
         onClick={() => router.push("/food")}
       >
-        Dalej
+        Przepraszam, to nie chcący 👉👈
       </button>
     </div>
   );
