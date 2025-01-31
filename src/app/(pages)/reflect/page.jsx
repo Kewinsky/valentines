@@ -8,7 +8,7 @@ const ReflectPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-3xl font-bold">
-        Zastanowilas sie nad swoim zachowaniem? ( ͡ಠ ʖ̯ ͡ಠ )
+        Przemyślałaś już swoje zachowanie? ( ͡ಠ ʖ̯ ͡ಠ )
       </h1>
       <Image
         src="/images/4.gif"

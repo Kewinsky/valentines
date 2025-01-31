@@ -71,9 +71,18 @@ const DessertPage = () => {
       <h1 className="text-3xl font-bold">
         Znajdzie się jeszcze miejsce na deserek? 🍰
       </h1>
-      <p className="text-lg mt-2 mb-6">Mam tez cos specialnego (≖ ͜ʖ≖)</p>
+      <p className="text-lg mt-2 mb-6">
+        Mam też coś specialnego dla Ciebie (≖ ͜ʖ≖)
+      </p>
 
-      <Slider photos={photos} getter={dessert} setter={setDessert} />
+      <div
+        className={
+          dessert === "Pomarańcze" && "tooltip tooltip-open tooltip-right"
+        }
+        data-tip="tak coś czułem..."
+      >
+        <Slider photos={photos} getter={dessert} setter={setDessert} />
+      </div>
 
       <div className="flex gap-4 mt-6">
         <button

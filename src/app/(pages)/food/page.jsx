@@ -85,7 +85,11 @@ const FoodPage = () => {
 
       <div
         className="tooltip tooltip-open tooltip-right"
-        data-tip="to se mozna scrollować 😁"
+        data-tip={
+          food === "Siakimaki"
+            ? "ez, wiedziałem że to wybierzesz"
+            : "to se można scrollować 😁"
+        }
       >
         <Slider photos={photos} getter={food} setter={setFood} />
       </div>
