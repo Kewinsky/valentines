@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Image from "next/image";
 
 const Slider = ({ photos, getter, setter }) => {
@@ -21,18 +22,32 @@ const Slider = ({ photos, getter, setter }) => {
 };
 
 const Photo = ({ photo, isSelected, onSelect }) => {
+  const [loading, setLoading] = useState(true);
+
+  // Function to handle when image is loaded
+  const handleImageLoad = () => {
+    setLoading(false); // Image has finished loading
+  };
+
   return (
     <div
       className="carousel-item w-64 flex flex-col items-center justify-center bg-secondary"
       onClick={() => onSelect(photo.label)}
     >
       <div className="relative w-64 h-64 overflow-hidden">
+        {loading && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="loading loading-spinner loading-lg"></span>
+          </div>
+        )}
+
         <Image
           src={photo.src}
-          className="object-cover w-full h-full"
           alt={`Image of ${photo.label}`}
+          className="object-cover w-full h-full"
           width={256}
           height={256}
+          onLoadingComplete={handleImageLoad} // Trigger when the image is loaded
         />
       </div>
 
@@ -44,7 +59,7 @@ const Photo = ({ photo, isSelected, onSelect }) => {
           onChange={() => onSelect(photo.label)}
           className="checkbox checkbox-md mr-2"
         />
-        <label for={photo.label} className="text-lg">
+        <label htmlFor={photo.label} className="text-lg">
           {photo.label}
         </label>
       </div>
