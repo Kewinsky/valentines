@@ -35,9 +35,9 @@ const ReviewPage = () => {
       });
 
       if (response.ok) {
-        alert("Dane zostały wysłane!");
+        console.error("Dane zostały wysłane!");
       } else {
-        alert("Wystąpił błąd podczas wysyłania danych.");
+        console.error("Wystąpił błąd podczas wysyłania danych.");
       }
     } catch (error) {
       console.error("Błąd:", error);
@@ -46,13 +46,17 @@ const ReviewPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen text-center">
       <h1 className="text-3xl font-bold">
         Oceń tą walentynke w skali od 1- 10? ( ͡^ ͜ʖ ͡^ )
       </h1>
-      <p className="text-lg mt-2">
-        Ocena: {rating} {rating >= 10 ? "(ᴗᵔᴥᵔ)" : "╰༼=ಠਊಠ=༽╯"}
-      </p>
+      <div className="flex mt-2">
+        <p className="text-lg mr-2">Ocena: {rating} </p>
+        <p className={rating < 10 && "animate-bounce"}>
+          {rating >= 10 ? "(ᴗᵔᴥᵔ)" : "╰༼=ಠਊಠ=༽╯"}
+        </p>
+      </div>
+
       <div className="w-80 my-6">
         <input
           type="range"

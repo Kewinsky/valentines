@@ -12,10 +12,12 @@ const ThanksPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen text-center">
       <h1 className="text-3xl font-bold">Świetnie! ❤️</h1>
       <p className="text-lg mt-2">
-        ..., a teraz zaplanuj naszą randkę! ᕙ( ͡° ͜ʖ ͡°)ᕗ
+        ..., a teraz zaplanuj naszą randkę!
+        <br />
+        ᕙ( ͡° ͜ʖ ͡°)ᕗ
       </p>
       <Image
         src="/images/6.gif"

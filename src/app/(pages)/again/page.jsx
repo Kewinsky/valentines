@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 const AgainPage = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen text-center">
       <h1 className="text-3xl font-bold">e?! 🤨</h1>
       <p className="text-lg mt-2">lepiej się dobrze zastanów... ༼ಠ ل ಠ༽</p>
       <Image

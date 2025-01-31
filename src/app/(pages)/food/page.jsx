@@ -79,22 +79,22 @@ const FoodPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-3xl font-bold ">Wybierz szamke... 🍝</h1>
+    <div className="flex flex-col items-center justify-center h-screen text-center">
+      <h1 className="text-3xl font-bold">Wybierz szamke... 🍝</h1>
       <p className="text-lg mt-2 mb-6">, ale chyba znam odpowiedź ( ͡°ω ͡°)</p>
 
       <div
-        className="tooltip tooltip-open tooltip-right"
+        className="tooltip tooltip-open tooltip-bottom"
         data-tip={
           food === "Siakimaki"
             ? "ez, wiedziałem że to wybierzesz"
-            : "to se można scrollować 😁"
+            : "to se można przesuwać palcem 😁"
         }
       >
         <Slider photos={photos} getter={food} setter={setFood} />
       </div>
 
-      <div className="flex gap-4 mt-6">
+      <div className="flex gap-4 mt-10">
         <button
           className="btn btn-primary btn-outline w-24"
           onClick={handleBack}

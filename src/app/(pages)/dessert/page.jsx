@@ -67,17 +67,15 @@ const DessertPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen text-center">
       <h1 className="text-3xl font-bold">
         Znajdzie się jeszcze miejsce na deserek? 🍰
       </h1>
-      <p className="text-lg mt-2 mb-6">
-        Mam też coś specialnego dla Ciebie (≖ ͜ʖ≖)
-      </p>
+      <p className="text-lg mt-2 mb-6">najlepsze na końcu (≖ ͜ʖ≖)</p>
 
       <div
         className={
-          dessert === "Pomarańcze" && "tooltip tooltip-open tooltip-right"
+          dessert === "Pomarańcze" && "tooltip tooltip-open tooltip-bottom"
         }
         data-tip="tak coś czułem..."
       >

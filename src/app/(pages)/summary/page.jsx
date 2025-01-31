@@ -53,7 +53,7 @@ const Summary = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen text-center">
       <h1 className="text-3xl font-bold mb-6">
         Czy zamówienie na ekranie się zgadza? ✿♥‿♥✿
       </h1>
@@ -140,7 +140,7 @@ const Summary = () => {
         </li>
         <li>
           <hr className="bg-primary" />
-          <div className="timeline-start timeline-box">😩</div>
+          <div className="timeline-start timeline-box">🥳</div>
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"

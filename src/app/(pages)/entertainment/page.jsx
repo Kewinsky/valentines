@@ -75,7 +75,7 @@ const EntertainmentPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-3xl font-bold">Co robimy później? 🎬</h1>
-      <p className="text-lg mt-2 mb-6">Sex is by default (‿!‿) ԅ(≖‿≖ԅ)</p>
+      <p className="text-lg mt-2 mb-6">(‿!‿) ԅ(≖‿≖ԅ)</p>
 
       <Slider
         photos={photos}
